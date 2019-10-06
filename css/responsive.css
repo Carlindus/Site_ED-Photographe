@@ -1,0 +1,359 @@
+@media screen and (max-width: 1281px) {
+  /******************** page de galerie ****************/
+  .menuGal ul li {
+    font-size: 1.5rem;
+    margin-top: 2%;
+  }
+  .menuGal h2 {
+    font-size: 1.5rem;
+  }
+  /******************* page contact ****************/
+  main.contact {
+    justify-content: space-around;
+  }
+  .contact section {
+    margin: 10px;
+  }
+  .contact nav.menuGal {
+    position: relative;
+    top: 0;
+  }
+}
+
+/***********************************************/
+
+/***********************************************/
+
+/***********************************************/
+
+@media screen and (max-width: 960px) {
+  /****************** toutes les pages ***************/
+  header.centerFlex {
+    height: 10vh;
+    justify-content: flex-start;
+  }
+  header .logoSmall, header .logo {
+    justify-content: flex-start;
+  }
+  header div {
+    width: 55vw;
+    max-height: 95%;
+  }
+  header nav span {
+    width: 50px;
+    height: 50px;
+  }
+  header div a img {
+    width: auto;
+    min-width: auto;
+  }
+  header div a.logoLetter img {
+    width: auto;
+  }
+  footer {
+    min-height: 100px;
+  }
+  footer p, footer nav a {
+    font-size: 1rem;
+  }
+  footer div {
+    width: 80%;
+    position: static;
+  }
+  footer div a {
+    margin: 0 25px;
+  }
+  footer p:last-child {
+    font-size: 1rem;
+  }
+  /**************** Menu Burger *******************/
+  .fa-bars, .fa-times {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .fa-bars {
+    color: #e6501e;
+  }
+  .fa-times {
+    color: #FFF;
+  }
+  #menuGal {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 0.5s all linear;
+    align-items: flex-start;
+  }
+  .menuGal h2 {
+    display: none;
+  }
+  .menuGal ul {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: rgba(20, 20, 20, 0.9);
+  }
+  .menuGal ul li {
+    width: 100%;
+    height: 50px;
+    font-size: 1.563rem;
+    /* 25/16 */
+    text-align: left;
+    border: none;
+    margin: 0;
+    /* background-color: rgba(20, 20, 20, 0.9); */
+    transition: all 0.5s;
+  }
+  .menuGal ul li a {
+    padding-left: 80px;
+    line-height: 30px;
+  }
+  .menuGal ul li.selected {
+    font-size: 2.188rem;
+    /* 35/16 */
+    /* line-height: 70px; */
+    padding-right: 20px;
+    background-color: rgba(230, 80, 30, 0.6);
+  }
+  .menuGal ul li:not(.selected):hover {
+    border-radius: 5px;
+    padding-right: 0;
+  }
+  .menuGal ul li.selected:hover a {
+    border: none;
+  }
+  .menuGal ul li:hover {
+    background-color: #e6501e;
+  }
+  /************************ homePage **********************/
+  #galerieMenu {
+    margin-top: 15px
+  }
+  #galerieMenu article {
+    width: 200px;
+    height: 235px;
+    margin-bottom: 0;
+  }
+  #galerieMenu>div article:last-of-type {
+    margin-bottom: 50px;
+  }
+  #galerieMenu div:last-of-type article:first-child {
+    margin-right: 50px;
+  }
+  #galerieMenu div:last-of-type article:nth-of-type(1), #galerieMenu div:last-of-type article:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+  #galerieMenu div:last-of-type article:nth-of-type(3) {
+    margin-left: 0;
+  }
+  #galerieMenu article h2 {
+    font-size: 1.875rem;
+    /* 30/16 */
+  }
+  #biographie, #informations {
+    width: 90vw;
+  }
+  /**************** Pages Galerie ***************/
+  .gal main section:first-of-type {
+    height: auto;
+    min-height: 0;
+    flex-direction: column;
+    padding: 0;
+  }
+  .menuGal {
+    top: 3vh;
+    left: 5vw;
+    height: auto;
+  }
+  .menuGal ul li {
+    height: auto;
+  }
+  .menuGal ul li.selected {
+    margin-bottom: 0;
+  }
+  .picFullscreen {
+    order: 2;
+    max-width: none;
+    max-height: none;
+    width: 85vw;
+    margin: 0 0 15px 0;
+  }
+  .navGal {
+    order: 1;
+    width: 490px;
+    height: 360px;
+    margin: 20px;
+  }
+  .navGal nav {
+    width: 490px;
+    height: 350px;
+  }
+  #navGal {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 0 10px;
+  }
+  #navGal figure {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px 10px 0;
+  }
+  #dotContainer {
+    z-index: 50;
+  }
+  .presta {
+    width: auto;
+    max-width: 70%;
+  }
+  /***************** Page contact ***************/
+  .contact section label {
+    padding: 5px 0;
+  }
+  .contact form input[type="submit"], .contact form input[type="reset"] {
+    padding: 10px;
+    margin: 15px;
+  }
+  /**********************  pages de droit **********************/
+  .droit {
+    column-count: 1 !important;
+  }
+  #page404 .droit, #merci .droit {
+    width: 80%;
+  }
+  /***********************************************/
+  /***********************************************/
+  /***********************************************/
+  @media screen and (max-width: 620px) {
+    /***************** animation *****************/
+    #ED {
+      left: calc(50vw - 150px);
+    }
+    #edTexte {
+      display: none;
+    }
+    #animIntro .container {
+      animation: none !important;
+    }
+    #animIntro a>img {
+      opacity: 0;
+      animation: animCenter 0.5s ease-in 2.3s forwards;
+    }
+    #animIntro>a img {
+  bottom: 10vh;
+    }
+    /* #animIntro .closeButton{
+        right: 50%;
+        top: 15vh;
+      } */
+    }
+    /* #animIntro a:last-child {
+      display: none;
+    } */
+      /**************** toutes les pages ***************/
+      header div a.logo {
+        display: none;
+      }
+      header div, header div a.logoSmall {
+        display: flex;
+        max-width: 90%;
+      }
+      header nav span {
+        width: 40px;
+        height: 40px;
+      }
+      .menuGal ul {
+        width: 100%;
+        padding-top: 45px;
+      }
+      footer nav a:first-of-type {
+        border-left: 1px solid #f5f5f5;
+      }
+      footer nav a:last-of-type {
+        border-right: 1px solid #f5f5f5;
+      }
+      /**************** Navigation Galerie ***************/
+      .gal main, main.contact {
+        min-height: inherit;
+        justify-content: flex-start;
+        padding-top: 0;
+      }
+      .contact main {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .navGal {
+        width: 340px;
+        height: 250px;
+        margin: 20px;
+      }
+      .navGal nav {
+        width: 340px;
+        height: 230px;
+      }
+      .dot {
+        min-height: 10px;
+        min-width: 10px;
+      }
+      #navGal {
+        padding: 10px 0 0 10px;
+      }
+      #navGal figure {
+        width: 100px;
+        height: 100px;
+        margin: 0 10px 10px 0;
+      }
+      .presta {
+        max-width: 90%;
+      }
+      .presta p {
+        padding: 15px 5px;
+        text-align: justify;
+        hyphens: auto;
+      }
+      .presta a {
+        margin: 20px auto;
+      }
+      .presta ul li {
+        padding: 5px 0;
+      }
+      /* config contact */
+      .fa-bars {
+        position: relative;
+        align-self: flex-start;
+        margin: 10px 0;
+      }
+      .contact .fa-bars {
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 480px) {
+        html {
+          font-size: 0.9rem;
+        }
+        header div a.logoSmall {
+          display: none;
+        }
+        header div, header div a.logoLetter {
+          display: flex;
+          width: auto;
+        }
+        td {
+          padding: 15px 10px;
+        }
+        tr.tdForm td {
+          padding: 5px 0 5px 10px !important;
+        }
+        table tr td:nth-of-type(2) {
+          text-align: left;
+        }
